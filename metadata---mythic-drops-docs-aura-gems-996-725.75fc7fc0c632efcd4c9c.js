@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{144:function(s){s.exports=JSON.parse('{"id":"aura_gems","title":"Aura Gems","description":"## Use Case","source":"@site/../docs/aura_gems.md","permalink":"/MythicDrops/docs/aura_gems","sidebar":"docs","previous":{"title":"socketing.yml","permalink":"/MythicDrops/docs/socketing_yml"}}')}}]);
