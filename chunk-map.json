@@ -1,7 +1,7 @@
 {
   "main": [
     "/MythicDrops/main.9837e9fa79502b71421d.css",
-    "/MythicDrops/main.c479aedcfa93f77e0771.js"
+    "/MythicDrops/main.f574e217e689b2b9df1a.js"
   ],
   "component---site-src-pages-index-jsc-4-f-f99": [
     "/MythicDrops/component---site-src-pages-index-jsc-4-f-f99.9f99729bff7f082bd679.css",
@@ -12,7 +12,7 @@
   ],
   "component---theme-doc-page-1-be-9be": [],
   "docsMetadata---mythic-drops-docs-119-1b6": [
-    "/MythicDrops/docsMetadata---mythic-drops-docs-119-1b6.f635c8fafd3ca2bac080.js"
+    "/MythicDrops/docsMetadata---mythic-drops-docs-119-1b6.d3a9e6c28d0fd7c13692.js"
   ],
   "component---theme-doc-item-178-a40": [
     "/MythicDrops/component---theme-doc-item-178-a40.de2648345892298aff25.css",
@@ -24,23 +24,23 @@
   "metadata---mythic-drops-docs-aura-gems-996-725": [
     "/MythicDrops/metadata---mythic-drops-docs-aura-gems-996-725.75fc7fc0c632efcd4c9c.js"
   ],
-  "content---mythic-drops-docs-config-yml-46-e-2d7": [
-    "/MythicDrops/content---mythic-drops-docs-config-yml-46-e-2d7.c7f31db2fa6260a20256.js"
-  ],
-  "metadata---mythic-drops-docs-config-yml-9-f-7-3cd": [
-    "/MythicDrops/metadata---mythic-drops-docs-config-yml-9-f-7-3cd.577360d84393d2168610.js"
-  ],
-  "content---mythic-drops-docs-creature-spawning-ymla-66-5ce": [
-    "/MythicDrops/content---mythic-drops-docs-creature-spawning-ymla-66-5ce.11057b280263b1c8b942.js"
-  ],
-  "metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe": [
-    "/MythicDrops/metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe.0c822dab0428b2e38e78.js"
-  ],
   "content---mythic-drops-docs-commands-6-f-3-21e": [
-    "/MythicDrops/content---mythic-drops-docs-commands-6-f-3-21e.03b9a8f56572bda3b8ff.js"
+    "/MythicDrops/content---mythic-drops-docs-commands-6-f-3-21e.a64370916391cfbaebf2.js"
   ],
   "metadata---mythic-drops-docs-commands-317-067": [
-    "/MythicDrops/metadata---mythic-drops-docs-commands-317-067.7dfdf9b52de1c3caa436.js"
+    "/MythicDrops/metadata---mythic-drops-docs-commands-317-067.83d3b75812e5ca42f9b6.js"
+  ],
+  "content---mythic-drops-docs-config-yml-46-e-2d7": [
+    "/MythicDrops/content---mythic-drops-docs-config-yml-46-e-2d7.1746089563545bb509d7.js"
+  ],
+  "metadata---mythic-drops-docs-config-yml-9-f-7-3cd": [
+    "/MythicDrops/metadata---mythic-drops-docs-config-yml-9-f-7-3cd.fbdb3fc25f3751846185.js"
+  ],
+  "content---mythic-drops-docs-creature-spawning-ymla-66-5ce": [
+    "/MythicDrops/content---mythic-drops-docs-creature-spawning-ymla-66-5ce.ea7996986329487961ed.js"
+  ],
+  "metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe": [
+    "/MythicDrops/metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe.d0db0156d10d58aa0136.js"
   ],
   "content---mythic-drops-docs-custom-items-yml-111-290": [
     "/MythicDrops/content---mythic-drops-docs-custom-items-yml-111-290.8e8af024f0b067529b22.js"
@@ -72,17 +72,17 @@
   "metadata---mythic-drops-docs-language-yml-8-a-3-b8a": [
     "/MythicDrops/metadata---mythic-drops-docs-language-yml-8-a-3-b8a.e66ee4e793ca369596b1.js"
   ],
-  "content---mythic-drops-docs-relation-yml-22-e-68d": [
-    "/MythicDrops/content---mythic-drops-docs-relation-yml-22-e-68d.ced83979d51df5d00d70.js"
-  ],
-  "metadata---mythic-drops-docs-relation-yml-02-e-39f": [
-    "/MythicDrops/metadata---mythic-drops-docs-relation-yml-02-e-39f.56192f78b3d8243e4ae8.js"
-  ],
   "content---mythic-drops-docs-permissionsd-67-6ee": [
-    "/MythicDrops/content---mythic-drops-docs-permissionsd-67-6ee.d5548e65ca3a17a16e3c.js"
+    "/MythicDrops/content---mythic-drops-docs-permissionsd-67-6ee.5df5aa9a70d35f193070.js"
   ],
   "metadata---mythic-drops-docs-permissions-02-e-ee3": [
-    "/MythicDrops/metadata---mythic-drops-docs-permissions-02-e-ee3.31d642d7fbcf046a4f15.js"
+    "/MythicDrops/metadata---mythic-drops-docs-permissions-02-e-ee3.891bc7a1cff064070501.js"
+  ],
+  "content---mythic-drops-docs-relation-yml-22-e-68d": [
+    "/MythicDrops/content---mythic-drops-docs-relation-yml-22-e-68d.34ec3a9df719b15bf955.js"
+  ],
+  "metadata---mythic-drops-docs-relation-yml-02-e-39f": [
+    "/MythicDrops/metadata---mythic-drops-docs-relation-yml-02-e-39f.15b31f5d1b986d6068fd.js"
   ],
   "content---mythic-drops-docs-repair-costs-ymldd-1-006": [
     "/MythicDrops/content---mythic-drops-docs-repair-costs-ymldd-1-006.eaaa611ba095b75efcd4.js"
