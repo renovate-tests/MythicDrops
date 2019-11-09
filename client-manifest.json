@@ -204,63 +204,63 @@
     "4": {
       "js": [
         {
-          "file": "content---mythic-drops-docs-aura-gems-9-cc-e00.6b44346b1cf70d29c231.js",
-          "hash": "0c823268ca139f6597dd",
-          "publicPath": "/MythicDrops/content---mythic-drops-docs-aura-gems-9-cc-e00.6b44346b1cf70d29c231.js"
+          "file": "content---mythic-drops-docs-aura-gems-9-cc-e00.349763debfecf4793255.js",
+          "hash": "aba6bcd267d3f875d3b2",
+          "publicPath": "/MythicDrops/content---mythic-drops-docs-aura-gems-9-cc-e00.349763debfecf4793255.js"
         }
       ]
     },
     "5": {
       "js": [
         {
-          "file": "content---mythic-drops-docs-commands-6-f-3-21e.52e9ca3ac6fd016720e5.js",
-          "hash": "993bc8db0604b03746ad",
-          "publicPath": "/MythicDrops/content---mythic-drops-docs-commands-6-f-3-21e.52e9ca3ac6fd016720e5.js"
+          "file": "content---mythic-drops-docs-commands-6-f-3-21e.a64370916391cfbaebf2.js",
+          "hash": "69d6fe0f06ccef4696f2",
+          "publicPath": "/MythicDrops/content---mythic-drops-docs-commands-6-f-3-21e.a64370916391cfbaebf2.js"
         }
       ]
     },
     "6": {
       "js": [
         {
-          "file": "content---mythic-drops-docs-config-yml-46-e-2d7.c7f31db2fa6260a20256.js",
-          "hash": "ec0c6209911a98b0e307",
-          "publicPath": "/MythicDrops/content---mythic-drops-docs-config-yml-46-e-2d7.c7f31db2fa6260a20256.js"
+          "file": "content---mythic-drops-docs-config-yml-46-e-2d7.1746089563545bb509d7.js",
+          "hash": "0d88e093f75b9e463a61",
+          "publicPath": "/MythicDrops/content---mythic-drops-docs-config-yml-46-e-2d7.1746089563545bb509d7.js"
         }
       ]
     },
     "7": {
       "js": [
         {
-          "file": "content---mythic-drops-docs-creature-spawning-ymla-66-5ce.11057b280263b1c8b942.js",
-          "hash": "51aa1340d91db385e3da",
-          "publicPath": "/MythicDrops/content---mythic-drops-docs-creature-spawning-ymla-66-5ce.11057b280263b1c8b942.js"
+          "file": "content---mythic-drops-docs-creature-spawning-ymla-66-5ce.ea7996986329487961ed.js",
+          "hash": "5fbcce2495f962f798a1",
+          "publicPath": "/MythicDrops/content---mythic-drops-docs-creature-spawning-ymla-66-5ce.ea7996986329487961ed.js"
         }
       ]
     },
     "8": {
       "js": [
         {
-          "file": "content---mythic-drops-docs-custom-items-yml-111-290.950a871d2e85eb363fdd.js",
-          "hash": "e19d7e0d7495e8945516",
-          "publicPath": "/MythicDrops/content---mythic-drops-docs-custom-items-yml-111-290.950a871d2e85eb363fdd.js"
+          "file": "content---mythic-drops-docs-custom-items-yml-111-290.8e8af024f0b067529b22.js",
+          "hash": "e90ebc5e9b818b2649ce",
+          "publicPath": "/MythicDrops/content---mythic-drops-docs-custom-items-yml-111-290.8e8af024f0b067529b22.js"
         }
       ]
     },
     "9": {
       "js": [
         {
-          "file": "content---mythic-drops-docs-identifying-yml-104-ef3.25f81128e5167fb2a045.js",
-          "hash": "88efb3694de6398f99a7",
-          "publicPath": "/MythicDrops/content---mythic-drops-docs-identifying-yml-104-ef3.25f81128e5167fb2a045.js"
+          "file": "content---mythic-drops-docs-identifying-yml-104-ef3.e597f1a524a6824a001c.js",
+          "hash": "f664cda08d20fc533908",
+          "publicPath": "/MythicDrops/content---mythic-drops-docs-identifying-yml-104-ef3.e597f1a524a6824a001c.js"
         }
       ]
     },
     "10": {
       "js": [
         {
-          "file": "content---mythic-drops-docs-installation-726-77c.24a2441274784d6e276e.js",
-          "hash": "05682c06f4acedf34bc0",
-          "publicPath": "/MythicDrops/content---mythic-drops-docs-installation-726-77c.24a2441274784d6e276e.js"
+          "file": "content---mythic-drops-docs-installation-726-77c.2b95362d13db70ec8f1c.js",
+          "hash": "7dd415099e6d31e6fe36",
+          "publicPath": "/MythicDrops/content---mythic-drops-docs-installation-726-77c.2b95362d13db70ec8f1c.js"
         }
       ]
     },
@@ -357,9 +357,9 @@
     "21": {
       "js": [
         {
-          "file": "docsMetadata---mythic-drops-docs-119-1b6.e00764f51887a55ea6d7.js",
-          "hash": "ef8a25bae2d3c5c63acf",
-          "publicPath": "/MythicDrops/docsMetadata---mythic-drops-docs-119-1b6.e00764f51887a55ea6d7.js"
+          "file": "docsMetadata---mythic-drops-docs-119-1b6.d3a9e6c28d0fd7c13692.js",
+          "hash": "b9eda2f666090af7573e",
+          "publicPath": "/MythicDrops/docsMetadata---mythic-drops-docs-119-1b6.d3a9e6c28d0fd7c13692.js"
         }
       ]
     },
@@ -367,78 +367,78 @@
       "css": [
         {
           "file": "main.9837e9fa79502b71421d.css",
-          "hash": "7b180654c575c4067e59",
+          "hash": "c11a54392012336020da",
           "publicPath": "/MythicDrops/main.9837e9fa79502b71421d.css"
         }
       ],
       "js": [
         {
-          "file": "main.ab7ccfa95d8c4945edc5.js",
-          "hash": "7b180654c575c4067e59",
-          "publicPath": "/MythicDrops/main.ab7ccfa95d8c4945edc5.js"
+          "file": "main.f574e217e689b2b9df1a.js",
+          "hash": "c11a54392012336020da",
+          "publicPath": "/MythicDrops/main.f574e217e689b2b9df1a.js"
         }
       ]
     },
     "23": {
       "js": [
         {
-          "file": "metadata---mythic-drops-docs-aura-gems-996-725.e0b060b9a39a10d552ac.js",
-          "hash": "b082c3bb35a04c70b43b",
-          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-aura-gems-996-725.e0b060b9a39a10d552ac.js"
+          "file": "metadata---mythic-drops-docs-aura-gems-996-725.75fc7fc0c632efcd4c9c.js",
+          "hash": "cc0194af97842377c674",
+          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-aura-gems-996-725.75fc7fc0c632efcd4c9c.js"
         }
       ]
     },
     "24": {
       "js": [
         {
-          "file": "metadata---mythic-drops-docs-commands-317-067.7b3f0c1bbff04cf284a7.js",
-          "hash": "1b0726f9e7f4d91b3e22",
-          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-commands-317-067.7b3f0c1bbff04cf284a7.js"
+          "file": "metadata---mythic-drops-docs-commands-317-067.83d3b75812e5ca42f9b6.js",
+          "hash": "0840af87a0de73c67262",
+          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-commands-317-067.83d3b75812e5ca42f9b6.js"
         }
       ]
     },
     "25": {
       "js": [
         {
-          "file": "metadata---mythic-drops-docs-config-yml-9-f-7-3cd.577360d84393d2168610.js",
-          "hash": "b46e915d9a6093265e9b",
-          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-config-yml-9-f-7-3cd.577360d84393d2168610.js"
+          "file": "metadata---mythic-drops-docs-config-yml-9-f-7-3cd.fbdb3fc25f3751846185.js",
+          "hash": "54895fba76e95a6f0a95",
+          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-config-yml-9-f-7-3cd.fbdb3fc25f3751846185.js"
         }
       ]
     },
     "26": {
       "js": [
         {
-          "file": "metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe.0c822dab0428b2e38e78.js",
-          "hash": "d4bfec1cb78e1174c602",
-          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe.0c822dab0428b2e38e78.js"
+          "file": "metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe.d0db0156d10d58aa0136.js",
+          "hash": "e3d1a8828f9fc04fcae3",
+          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe.d0db0156d10d58aa0136.js"
         }
       ]
     },
     "27": {
       "js": [
         {
-          "file": "metadata---mythic-drops-docs-custom-items-yml-986-2c2.658649cdcc329594cbb7.js",
-          "hash": "f8cda9d61ed88609b0ec",
-          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-custom-items-yml-986-2c2.658649cdcc329594cbb7.js"
+          "file": "metadata---mythic-drops-docs-custom-items-yml-986-2c2.114bba0d2de21ed61d31.js",
+          "hash": "643a1bfe7935af3cc5a3",
+          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-custom-items-yml-986-2c2.114bba0d2de21ed61d31.js"
         }
       ]
     },
     "28": {
       "js": [
         {
-          "file": "metadata---mythic-drops-docs-identifying-yml-423-53f.76503d85424db76a18df.js",
-          "hash": "b85449156eac56c0f28a",
-          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-identifying-yml-423-53f.76503d85424db76a18df.js"
+          "file": "metadata---mythic-drops-docs-identifying-yml-423-53f.7491bef69654a1813741.js",
+          "hash": "8573dff3ed53c3537308",
+          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-identifying-yml-423-53f.7491bef69654a1813741.js"
         }
       ]
     },
     "29": {
       "js": [
         {
-          "file": "metadata---mythic-drops-docs-installationd-33-136.21a84688ae1ed1eb84e2.js",
-          "hash": "319e3b5413762ae362be",
-          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-installationd-33-136.21a84688ae1ed1eb84e2.js"
+          "file": "metadata---mythic-drops-docs-installationd-33-136.66f1a7e3ca37cb462941.js",
+          "hash": "41191a487626b8ee4bea",
+          "publicPath": "/MythicDrops/metadata---mythic-drops-docs-installationd-33-136.66f1a7e3ca37cb462941.js"
         }
       ]
     },
@@ -535,9 +535,9 @@
     "40": {
       "js": [
         {
-          "file": "runtime~main.993db55c13f0e5746c19.js",
-          "hash": "71b8872685f304f10364",
-          "publicPath": "/MythicDrops/runtime~main.993db55c13f0e5746c19.js"
+          "file": "runtime~main.e59f5946f4e44a8ab97c.js",
+          "hash": "99e2a2345b09949400f2",
+          "publicPath": "/MythicDrops/runtime~main.e59f5946f4e44a8ab97c.js"
         }
       ]
     },

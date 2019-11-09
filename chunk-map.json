@@ -1,7 +1,7 @@
 {
   "main": [
     "/MythicDrops/main.9837e9fa79502b71421d.css",
-    "/MythicDrops/main.ab7ccfa95d8c4945edc5.js"
+    "/MythicDrops/main.f574e217e689b2b9df1a.js"
   ],
   "component---site-src-pages-index-jsc-4-f-f99": [
     "/MythicDrops/component---site-src-pages-index-jsc-4-f-f99.9f99729bff7f082bd679.css",
@@ -12,53 +12,53 @@
   ],
   "component---theme-doc-page-1-be-9be": [],
   "docsMetadata---mythic-drops-docs-119-1b6": [
-    "/MythicDrops/docsMetadata---mythic-drops-docs-119-1b6.e00764f51887a55ea6d7.js"
+    "/MythicDrops/docsMetadata---mythic-drops-docs-119-1b6.d3a9e6c28d0fd7c13692.js"
   ],
   "component---theme-doc-item-178-a40": [
     "/MythicDrops/component---theme-doc-item-178-a40.de2648345892298aff25.css",
     "/MythicDrops/component---theme-doc-item-178-a40.b4f3d370f1427570f5a7.js"
   ],
-  "content---mythic-drops-docs-commands-6-f-3-21e": [
-    "/MythicDrops/content---mythic-drops-docs-commands-6-f-3-21e.52e9ca3ac6fd016720e5.js"
-  ],
-  "metadata---mythic-drops-docs-commands-317-067": [
-    "/MythicDrops/metadata---mythic-drops-docs-commands-317-067.7b3f0c1bbff04cf284a7.js"
-  ],
-  "content---mythic-drops-docs-config-yml-46-e-2d7": [
-    "/MythicDrops/content---mythic-drops-docs-config-yml-46-e-2d7.c7f31db2fa6260a20256.js"
-  ],
-  "metadata---mythic-drops-docs-config-yml-9-f-7-3cd": [
-    "/MythicDrops/metadata---mythic-drops-docs-config-yml-9-f-7-3cd.577360d84393d2168610.js"
-  ],
-  "content---mythic-drops-docs-creature-spawning-ymla-66-5ce": [
-    "/MythicDrops/content---mythic-drops-docs-creature-spawning-ymla-66-5ce.11057b280263b1c8b942.js"
-  ],
-  "metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe": [
-    "/MythicDrops/metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe.0c822dab0428b2e38e78.js"
-  ],
-  "content---mythic-drops-docs-custom-items-yml-111-290": [
-    "/MythicDrops/content---mythic-drops-docs-custom-items-yml-111-290.950a871d2e85eb363fdd.js"
-  ],
-  "metadata---mythic-drops-docs-custom-items-yml-986-2c2": [
-    "/MythicDrops/metadata---mythic-drops-docs-custom-items-yml-986-2c2.658649cdcc329594cbb7.js"
-  ],
-  "content---mythic-drops-docs-identifying-yml-104-ef3": [
-    "/MythicDrops/content---mythic-drops-docs-identifying-yml-104-ef3.25f81128e5167fb2a045.js"
-  ],
-  "metadata---mythic-drops-docs-identifying-yml-423-53f": [
-    "/MythicDrops/metadata---mythic-drops-docs-identifying-yml-423-53f.76503d85424db76a18df.js"
-  ],
-  "content---mythic-drops-docs-installation-726-77c": [
-    "/MythicDrops/content---mythic-drops-docs-installation-726-77c.24a2441274784d6e276e.js"
-  ],
-  "metadata---mythic-drops-docs-installationd-33-136": [
-    "/MythicDrops/metadata---mythic-drops-docs-installationd-33-136.21a84688ae1ed1eb84e2.js"
-  ],
   "content---mythic-drops-docs-aura-gems-9-cc-e00": [
-    "/MythicDrops/content---mythic-drops-docs-aura-gems-9-cc-e00.6b44346b1cf70d29c231.js"
+    "/MythicDrops/content---mythic-drops-docs-aura-gems-9-cc-e00.349763debfecf4793255.js"
   ],
   "metadata---mythic-drops-docs-aura-gems-996-725": [
-    "/MythicDrops/metadata---mythic-drops-docs-aura-gems-996-725.e0b060b9a39a10d552ac.js"
+    "/MythicDrops/metadata---mythic-drops-docs-aura-gems-996-725.75fc7fc0c632efcd4c9c.js"
+  ],
+  "content---mythic-drops-docs-commands-6-f-3-21e": [
+    "/MythicDrops/content---mythic-drops-docs-commands-6-f-3-21e.a64370916391cfbaebf2.js"
+  ],
+  "metadata---mythic-drops-docs-commands-317-067": [
+    "/MythicDrops/metadata---mythic-drops-docs-commands-317-067.83d3b75812e5ca42f9b6.js"
+  ],
+  "content---mythic-drops-docs-config-yml-46-e-2d7": [
+    "/MythicDrops/content---mythic-drops-docs-config-yml-46-e-2d7.1746089563545bb509d7.js"
+  ],
+  "metadata---mythic-drops-docs-config-yml-9-f-7-3cd": [
+    "/MythicDrops/metadata---mythic-drops-docs-config-yml-9-f-7-3cd.fbdb3fc25f3751846185.js"
+  ],
+  "content---mythic-drops-docs-creature-spawning-ymla-66-5ce": [
+    "/MythicDrops/content---mythic-drops-docs-creature-spawning-ymla-66-5ce.ea7996986329487961ed.js"
+  ],
+  "metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe": [
+    "/MythicDrops/metadata---mythic-drops-docs-creature-spawning-yml-6-e-3-efe.d0db0156d10d58aa0136.js"
+  ],
+  "content---mythic-drops-docs-custom-items-yml-111-290": [
+    "/MythicDrops/content---mythic-drops-docs-custom-items-yml-111-290.8e8af024f0b067529b22.js"
+  ],
+  "metadata---mythic-drops-docs-custom-items-yml-986-2c2": [
+    "/MythicDrops/metadata---mythic-drops-docs-custom-items-yml-986-2c2.114bba0d2de21ed61d31.js"
+  ],
+  "content---mythic-drops-docs-identifying-yml-104-ef3": [
+    "/MythicDrops/content---mythic-drops-docs-identifying-yml-104-ef3.e597f1a524a6824a001c.js"
+  ],
+  "metadata---mythic-drops-docs-identifying-yml-423-53f": [
+    "/MythicDrops/metadata---mythic-drops-docs-identifying-yml-423-53f.7491bef69654a1813741.js"
+  ],
+  "content---mythic-drops-docs-installation-726-77c": [
+    "/MythicDrops/content---mythic-drops-docs-installation-726-77c.2b95362d13db70ec8f1c.js"
+  ],
+  "metadata---mythic-drops-docs-installationd-33-136": [
+    "/MythicDrops/metadata---mythic-drops-docs-installationd-33-136.66f1a7e3ca37cb462941.js"
   ],
   "content---mythic-drops-docs-item-groups-ymlbfe-abf": [
     "/MythicDrops/content---mythic-drops-docs-item-groups-ymlbfe-abf.884b65e578d1576d02cf.js"
