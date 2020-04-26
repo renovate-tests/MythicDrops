@@ -468,6 +468,20 @@ module.exports = Token;
 
 /***/ }),
 /* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function TabItem(props){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",null,props.children);}/* harmony default export */ __webpack_exports__["a"] = (TabItem);
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var helpers = __webpack_require__(74);
@@ -525,7 +539,7 @@ module.exports = {
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var fs = __webpack_require__(27)
@@ -877,20 +891,6 @@ function retry () {
 
 
 /***/ }),
-/* 11 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function TabItem(props){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",null,props.children);}/* harmony default export */ __webpack_exports__["a"] = (TabItem);
-
-/***/ }),
 /* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -950,6 +950,42 @@ module.exports = Marker;
 
 /***/ }),
 /* 14 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(0);
+var react_default = /*#__PURE__*/__webpack_require__.n(react);
+
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/TabGroupChoiceContext.js
+var TabGroupChoiceContext = __webpack_require__(55);
+
+// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/hooks/useTabGroupChoiceContext.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function useTabGroupChoiceContext(){return Object(react["useContext"])(TabGroupChoiceContext["a" /* default */]);}/* harmony default export */ var hooks_useTabGroupChoiceContext = (useTabGroupChoiceContext);
+// EXTERNAL MODULE: ./node_modules/classnames/index.js
+var classnames = __webpack_require__(6);
+var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
+
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/Tabs/styles.module.css
+var styles_module = __webpack_require__(147);
+var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
+
+// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/Tabs/index.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const keys={left:37,right:39};function Tabs(props){const{block,children,defaultValue,values,groupId}=props;const{tabGroupChoices,setTabGroupChoices}=hooks_useTabGroupChoiceContext();const[selectedValue,setSelectedValue]=Object(react["useState"])(defaultValue);if(groupId!=null){const relevantTabGroupChoice=tabGroupChoices[groupId];if(relevantTabGroupChoice!=null&&relevantTabGroupChoice!==selectedValue){setSelectedValue(relevantTabGroupChoice);}}const changeSelectedValue=newValue=>{setSelectedValue(newValue);if(groupId!=null){setTabGroupChoices(groupId,newValue);}};const tabRefs=[];const focusNextTab=(tabs,target)=>{const next=tabs.indexOf(target)+1;if(!tabs[next]){tabs[0].focus();}else{tabs[next].focus();}};const focusPreviousTab=(tabs,target)=>{const prev=tabs.indexOf(target)-1;if(!tabs[prev]){tabs[tabs.length-1].focus();}else{tabs[prev].focus();}};const handleKeydown=(tabs,target,event)=>{switch(event.keyCode){case keys.right:focusNextTab(tabs,target);break;case keys.left:focusPreviousTab(tabs,target);break;default:break;}};return/*#__PURE__*/react_default.a.createElement("div",null,/*#__PURE__*/react_default.a.createElement("ul",{role:"tablist","aria-orientation":"horizontal",className:classnames_default()('tabs',{'tabs--block':block})},values.map(({value,label})=>/*#__PURE__*/react_default.a.createElement("li",{role:"tab",tabIndex:"0","aria-selected":selectedValue===value,className:classnames_default()('tab-item',styles_module_default.a.tabItem,{'tab-item--active':selectedValue===value}),key:value,ref:tabControl=>tabRefs.push(tabControl),onKeyDown:event=>handleKeydown(tabRefs,event.target,event),onFocus:()=>changeSelectedValue(value),onClick:()=>changeSelectedValue(value)},label))),/*#__PURE__*/react_default.a.createElement("div",{role:"tabpanel",className:"margin-vert--md"},react["Children"].toArray(children).filter(child=>child.props.value===selectedValue)[0]));}/* harmony default export */ var theme_Tabs = __webpack_exports__["a"] = (Tabs);
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -981,7 +1017,7 @@ exports.fromPromise = function (fn) {
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1196,7 +1232,7 @@ var index = react_default.a.createContext || createReactContext;
 /* harmony default export */ var esm = (index);
 
 // EXTERNAL MODULE: ./node_modules/tiny-invariant/dist/tiny-invariant.esm.js
-var tiny_invariant_esm = __webpack_require__(16);
+var tiny_invariant_esm = __webpack_require__(17);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
 var esm_extends = __webpack_require__(2);
@@ -1861,7 +1897,7 @@ if (false) { var secondaryBuildName, initialBuildName, buildNames, key, global; 
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1881,12 +1917,12 @@ function invariant(condition, message) {
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-const u = __webpack_require__(14).fromCallback
+const u = __webpack_require__(15).fromCallback
 const mkdirs = u(__webpack_require__(260))
 const mkdirsSync = __webpack_require__(261)
 
@@ -1900,42 +1936,6 @@ module.exports = {
   ensureDirSync: mkdirsSync
 }
 
-
-/***/ }),
-/* 18 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
-var react_default = /*#__PURE__*/__webpack_require__.n(react);
-
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/TabGroupChoiceContext.js
-var TabGroupChoiceContext = __webpack_require__(55);
-
-// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/hooks/useTabGroupChoiceContext.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function useTabGroupChoiceContext(){return Object(react["useContext"])(TabGroupChoiceContext["a" /* default */]);}/* harmony default export */ var hooks_useTabGroupChoiceContext = (useTabGroupChoiceContext);
-// EXTERNAL MODULE: ./node_modules/classnames/index.js
-var classnames = __webpack_require__(6);
-var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
-
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/Tabs/styles.module.css
-var styles_module = __webpack_require__(147);
-var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
-
-// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/Tabs/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const keys={left:37,right:39};function Tabs(props){const{block,children,defaultValue,values,groupId}=props;const{tabGroupChoices,setTabGroupChoices}=hooks_useTabGroupChoiceContext();const[selectedValue,setSelectedValue]=Object(react["useState"])(defaultValue);if(groupId!=null){const relevantTabGroupChoice=tabGroupChoices[groupId];if(relevantTabGroupChoice!=null&&relevantTabGroupChoice!==selectedValue){setSelectedValue(relevantTabGroupChoice);}}const changeSelectedValue=newValue=>{setSelectedValue(newValue);if(groupId!=null){setTabGroupChoices(groupId,newValue);}};const tabRefs=[];const focusNextTab=(tabs,target)=>{const next=tabs.indexOf(target)+1;if(!tabs[next]){tabs[0].focus();}else{tabs[next].focus();}};const focusPreviousTab=(tabs,target)=>{const prev=tabs.indexOf(target)-1;if(!tabs[prev]){tabs[tabs.length-1].focus();}else{tabs[prev].focus();}};const handleKeydown=(tabs,target,event)=>{switch(event.keyCode){case keys.right:focusNextTab(tabs,target);break;case keys.left:focusPreviousTab(tabs,target);break;default:break;}};return/*#__PURE__*/react_default.a.createElement("div",null,/*#__PURE__*/react_default.a.createElement("ul",{role:"tablist","aria-orientation":"horizontal",className:classnames_default()('tabs',{'tabs--block':block})},values.map(({value,label})=>/*#__PURE__*/react_default.a.createElement("li",{role:"tab",tabIndex:"0","aria-selected":selectedValue===value,className:classnames_default()('tab-item',styles_module_default.a.tabItem,{'tab-item--active':selectedValue===value}),key:value,ref:tabControl=>tabRefs.push(tabControl),onKeyDown:event=>handleKeydown(tabRefs,event.target,event),onFocus:()=>changeSelectedValue(value),onClick:()=>changeSelectedValue(value)},label))),/*#__PURE__*/react_default.a.createElement("div",{role:"tabpanel",className:"margin-vert--md"},react["Children"].toArray(children).filter(child=>child.props.value===selectedValue)[0]));}/* harmony default export */ var theme_Tabs = __webpack_exports__["a"] = (Tabs);
 
 /***/ }),
 /* 19 */
@@ -2072,7 +2072,7 @@ function valueEqual(a, b) {
 /* harmony default export */ var value_equal = (valueEqual);
 
 // EXTERNAL MODULE: ./node_modules/tiny-invariant/dist/tiny-invariant.esm.js
-var tiny_invariant_esm = __webpack_require__(16);
+var tiny_invariant_esm = __webpack_require__(17);
 
 // CONCATENATED MODULE: ./node_modules/history/esm/history.js
 
@@ -3040,7 +3040,7 @@ module.exports = {
 
 "use strict";
 
-const u = __webpack_require__(14).fromPromise
+const u = __webpack_require__(15).fromPromise
 const fs = __webpack_require__(109)
 
 function pathExists (path) {
@@ -4823,7 +4823,7 @@ module.exports = {
 /* unused harmony export HashRouter */
 /* unused harmony export Link */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavLink; });
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["f"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["g"]; });
@@ -4836,7 +4836,7 @@ module.exports = {
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2);
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(30);
-/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(16);
+/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(17);
 
 
 
@@ -9962,7 +9962,7 @@ module.exports = hasProtocol;
 "use strict";
 
 
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 const path = __webpack_require__(5)
 
 const NODE_VERSION_MAJOR_WITH_BIGINT = 10
@@ -10141,7 +10141,7 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(14).fromCallback
+const u = __webpack_require__(15).fromCallback
 const rimraf = __webpack_require__(265)
 
 module.exports = {
@@ -11237,7 +11237,7 @@ HelmetExport.renderStatic = HelmetExport.rewind;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return matchRoutes; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return renderRoutes; });
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
@@ -12524,8 +12524,8 @@ module.exports = restoreWithComponents;
 // Properties will be tokenized in one step, see #429
 
 var Token = __webpack_require__(7);
-var serializeRules = __webpack_require__(9).rules;
-var serializeValue = __webpack_require__(9).value;
+var serializeRules = __webpack_require__(10).rules;
+var serializeValue = __webpack_require__(10).value;
 
 function extractProperties(token) {
   var properties = [];
@@ -12825,7 +12825,7 @@ module.exports =
 "use strict";
 
 
-const u = __webpack_require__(14).fromCallback
+const u = __webpack_require__(15).fromCallback
 const jsonFile = __webpack_require__(273)
 
 module.exports = {
@@ -14543,8 +14543,8 @@ module.exports =
 
 // This is adapted from https://github.com/normalize/mz
 // Copyright (c) 2014-2016 Jonathan Ong me@jongleberry.com and Contributors
-const u = __webpack_require__(14).fromCallback
-const fs = __webpack_require__(10)
+const u = __webpack_require__(15).fromCallback
+const fs = __webpack_require__(11)
 
 const api = [
   'access',
@@ -14708,7 +14708,7 @@ module.exports = {
 "use strict";
 
 
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 const os = __webpack_require__(90)
 const path = __webpack_require__(5)
 
@@ -14794,7 +14794,7 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(14).fromCallback
+const u = __webpack_require__(15).fromCallback
 module.exports = {
   copy: u(__webpack_require__(263))
 }
@@ -14899,8 +14899,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11);
+/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
 const frontMatter={id:'customItems_yml',title:'customItems.yml'};const metadata={"id":"customItems_yml","title":"customItems.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/customItems_yml.md","permalink":"/MythicDrops/docs/customItems_yml","sidebar":"docs","previous":{"title":"creatureSpawning.yml","permalink":"/MythicDrops/docs/creatureSpawning_yml"},"next":{"title":"identifying.yml","permalink":"/MythicDrops/docs/identifying_yml"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of the
 customItems.yml with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"5.1.0",values:[{label:'5.1.0 (MD 6.1.x)',value:'5.1.0'},{label:'5.0.0 (MD 6.0.x)',value:'5.0.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"5.1.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 5.1.0
 ## Name of a custom item. Used as an identifier by the plugin, so it needs
@@ -15084,10 +15084,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11);
+/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
 const frontMatter={id:'config_yml',title:'config.yml'};const metadata={"id":"config_yml","title":"config.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/config_yml.md","permalink":"/MythicDrops/docs/config_yml","sidebar":"docs","previous":{"title":"WorldGuard Support","permalink":"/MythicDrops/docs/worldguard-support"},"next":{"title":"creatureSpawning.yml","permalink":"/MythicDrops/docs/creatureSpawning_yml"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of the
-config.yml with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"7.2.0",values:[{label:'7.2.0 (MD 6.1.x)',value:'7.2.0'},{label:'7.1.0 (MD 6.0.x)',value:'7.1.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"7.2.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 7.2.0
+config.yml with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"7.3.0",values:[{label:'7.3.0 (MD 6.1.x)',value:'7.3.0'},{label:'7.1.0 (MD 6.0.x)',value:'7.1.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"7.2.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 7.2.0
 options:
   ## Should monsters who receive drops be given
   ## random names? Pulls from the resources/mobnames
@@ -15145,6 +15145,10 @@ options:
   ## bonus enchantments with the same enchantment. This will lead to
   ## scenarios where you may have low numbers of enchantments on items.
   only-roll-bonus-enchantments-once: false
+  ## Set this to true if you do not want to be able to roll multiple
+  ## bonus attributes with the same attribute. This will lead to
+  ## scenarios where you may have low numbers of attributes on items.
+  only-roll-bonus-attributes-once: false
 multiworld:
   ## Include any worlds where you want to have MythicDrops
   ## create drops here.
@@ -15409,8 +15413,167 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-const frontMatter={id:'tier_yml',title:'tier.yml'};const metadata={"id":"tier_yml","title":"tier.yml","description":"## Configuration","source":"@site/../docs/tier_yml.md","permalink":"/MythicDrops/docs/tier_yml"};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of a
-tier YAML with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Display color and identifier color combinations must be unique.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 1.0.1
+/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
+const frontMatter={id:'tier_yml',title:'tier.yml'};const metadata={"id":"tier_yml","title":"tier.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/tier_yml.md","permalink":"/MythicDrops/docs/tier_yml"};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of a
+tier YAML with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Display color and identifier color combinations must be unique.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"1.1.0",values:[{label:'1.1.0 (MD 6.1.x)',value:'1.1.0'},{label:'1.0.1 (MD 6.0.x)',value:'1.0.1'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"1.1.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 1.1.0
+## Display name for the tier. Used for display on items in lore.
+display-name: Legendary
+## Color of the tier when used in names. Prefixed to the name of the randomized item as well.
+display-color: GOLD
+## Used in combination with the display color to identify the tier based on item name. Added to
+## the end of the item name.
+identifier-color: DARK_RED
+attributes:
+  ## These attributes will go on every item from this tier.
+  base-attributes:
+    ## This needs to be a unique value per attribute/tier. It's used to help identify
+    ## the attribute to Minecraft.
+    legendaryuniquekey1:
+      ## Attribute for this particular modifier. Attribute names here:
+      ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/Attribute.html
+      attribute: GENERIC_ARMOR
+      ## Decimal value for the amount this attribute adds.
+      amount: 2.0
+      ## Operation for this particular modifier. Operation names and descriptions here:
+      ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/AttributeModifier.Operation.html
+      operation: ADD_NUMBER
+  bonus-attributes:
+    legendaryuniquekey2:
+      attribute: GENERIC_ARMOR
+      ## Decimal value for the minimum amount this attribute adds.
+      minimum-amount: 4.0
+      ## Decimal value for the maximum amount this attribute adds.
+      maximum-amount: 6.0
+      operation: ADD_NUMBER
+      ## Which equipment slot should this modifier apply to? Not including
+      ## this field makes it apply to every equipment slot. Slot names here:
+      ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/EquipmentSlot.html
+      slot: OFF_HAND
+  ## The minimum number of bonus attributes to go on items from this tier.
+  minimum-bonus-attributes: 0
+  ## The maximum number of bonus attributes to go on items from this tier.
+  maximum-bonus-attributes: 0
+enchantments:
+  ## If set to true, only base enchantments that could naturally appear on the item will be put on the item.
+  ## For instance, with this on, a sword could not get the Feather Falling enchantment.
+  safe-base-enchantments: true
+  ## If set to true, only bonus enchantments that could naturally appear on the item will be put on the item.
+  ## For instance, with this on, a sword could not get the Feather Falling enchantment.
+  safe-bonus-enchantments: false
+  ## If set to true, base enchantments are allowed to roll numbers higher than naturally obtainable.
+  allow-high-base-enchantments: true
+  ## If set to true, bonus enchantments are allowed to roll numbers higher than naturally obtainable.
+  allow-high-bonus-enchantments: true
+  ## This is a list of enchantments that will go on every item of this tier. They can be specified in
+  ## the below format:
+  ## < > - mandatory
+  ## [ ] - optional
+  ##
+  ## <ENCHANTMENT NAME>:<MINIMUM LEVEL>:[MAXIMUM LEVEL]
+  ##
+  ## See below for a couple of examples. Make sure to not end the value with the colon.
+  base-enchantments:
+    - ARROW_DAMAGE:1:1
+    - DURABILITY:10
+    - ARROW_INFINITE:1:1
+    - DAMAGE_ALL:1:5
+  ## This is a list of enchantments that can be rolled onto items in this tier. Note that it has a different
+  ## shape than the base-enchantments section. Both base-enchantments and bonus-enchantments can follow either
+  ## pattern. You can have a list (like in the above section) or you can have sub-sections (like below).
+  ##
+  ## In this section, like above, minimum-level is mandatory while maximum-level is optional.
+  bonus-enchantments:
+    PROTECTION_FIRE:
+      minimum-level: 1
+      maximum-level: 2
+    ARROW_FIRE:
+      minimum-level: 1
+      maximum-level: 1
+    DAMAGE_ARTHROPODS:
+      minimum-level: 1
+      maximum-level: 4
+  ## This is the minimum number of bonus-enchantments that can be rolled on an item
+  ## from this tier. In order to meet this number, multiple of the same bonus enchantment
+  ## can be rolled.
+  minimum-bonus-enchantments: 7
+  ## This is the maximum number of bonus-enchantments that can be rolled on an item
+  ## from this tier. In order to meet this number, multiple of the same bonus enchantment
+  ## can be rolled.
+  maximum-bonus-enchantments: 10
+lore:
+  ## This is the minimum number of bonus-lore that can be rolled on an item
+  ## from this tier. In order to meet this number, multiple of the same bonus lore
+  ## can be rolled.
+  minimum-bonus-lore: 0
+  ## This is the maximum number of bonus-lore that can be rolled on an item
+  ## from this tier. In order to meet this number, multiple of the same bonus lore
+  ## can be rolled.
+  maximum-bonus-lore: 0
+  ## This is a list of lore that will go on every item from this tier.
+  base-lore:
+    - "&6An item only the worthy can hold."
+  ## This is a list of lore that will be selected from when applying bonus lore. You can add
+  ## multiple lines in the bonus lore by adding a linebreak character in the value: \\n
+  bonus-lore:
+    - "&6Test Lore"
+    - "&6Please Ignore"
+## This is the maximum durability percentage that an item of this tier can spawn
+## at. 1.0 = 100%, 0.0 = 0%
+maximum-durability: 0.8
+## This is the minimum durability percentage that an item of this tier can spawn
+## at. 1.0 = 100%, 0.0 = 0%
+minimum-durability: 0.75
+## This is the minimum number of sockets that can be rolled on an item of this tier.
+minimum-sockets: 0
+## This is the maximum number of sockets that can be rolled on an item of this tier.
+maximum-sockets: 6
+## This is the weight of this tier. See the weight page for more details.
+weight: 0.01
+## This is the percentage chance for a mob to drop this item if they're holding it
+## when they die. 1.0 = 100%, 0.0 = 0%
+chance-to-drop-on-monster-death: 1.0
+## This is the weight of this tier when identifying an item. See the weight page for more details.
+identity-weight: 0.01
+## This is the percentage chance for an item of this tier to have sockets. 1.0 = 100%, 0.0 = 0%
+chance-to-have-sockets: 0.6
+## Should a broadcast be sent to all players on the same world when an item of this tier is found?
+broadcast-on-find: true
+item-types:
+  ## Item groups containing materials that items from this tier can use.
+  allowed-groups:
+    - pickaxe
+    - sword
+    - shears
+    - axe
+    - hoe
+    - shovel
+    - bow
+    - fishing rod
+    - helmet
+    - boots
+    - chestplate
+    - leggings
+  ## Item groups containing materials that items from this tier cannot use. Any materials in both this list
+  ## and allowed-groups will not be used.
+  disallowed-groups:
+    - leather
+    - chainmail
+    - gold
+    - iron
+    - wood
+    - stone
+  ## Explicit material IDs that items from this tier can use. Combined with allowed-groups.
+  allowed-material-ids: []
+  ## Explicit material IDs that items from this tier cannot use. Combined with disallowed-groups.
+  disallowed-material-ids: []
+## Minimum distance from spawn that a mob must be in order to get this item. -1 disables.
+minimum-distance-from-spawn: -1
+## Maximum distance from spawn that a mob must be in order to get this item. -1 disables.
+maximum-distance-from-spawn: -1
+## Should the item spawn with the unbreakable flag?
+unbreakable: false
+`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"1.0.1",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 1.0.1
 ## Display name for the tier. Used for display on items in lore.
 display-name: Legendary
 ## Color of the tier when used in names. Prefixed to the name of the randomized item as well.
@@ -15537,7 +15700,7 @@ minimum-distance-from-spawn: -1
 maximum-distance-from-spawn: -1
 ## Should the item spawn with the unbreakable flag?
 unbreakable: false
-`)));};MDXContent.isMDXComponent=true;
+`)))));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 126 */
@@ -15553,8 +15716,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11);
+/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
 /* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
 const frontMatter={id:'socketing_yml',title:'socketing.yml'};const metadata={"id":"socketing_yml","title":"socketing.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/socketing_yml.md","permalink":"/MythicDrops/docs/socketing_yml","sidebar":"docs","previous":{"title":"socketGems.yml","permalink":"/MythicDrops/docs/socketGems_yml"},"next":{"title":"Aura Gems","permalink":"/MythicDrops/docs/aura_gems"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of the
 socketing.yml with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"5.2.0",values:[{label:'5.2.0 (MD 6.1.x)',value:'5.2.0'},{label:'5.1.0 (MD 6.0.1+)',value:'5.1.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"5.2.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 5.2.0
@@ -15799,8 +15962,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11);
+/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
 const frontMatter={id:'language_yml',title:'language.yml'};const metadata={"id":"language_yml","title":"language.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/language_yml.md","permalink":"/MythicDrops/docs/language_yml","sidebar":"docs","previous":{"title":"itemGroups.yml","permalink":"/MythicDrops/docs/itemGroups_yml"},"next":{"title":"relation.yml","permalink":"/MythicDrops/docs/relation_yml"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of the
 language.yml. Most of the options are just used for various command outputs
 and the names of the keys are fairly self explanatory.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`There are a couple of explanations below, but most options are self-explanatory.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"3.5.0",values:[{label:'3.6.0 (MD 6.1.x)',value:'3.5.0'},{label:'3.2.0 (MD 6.0.x)',value:'3.2.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"3.5.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 3.6.0
@@ -16590,8 +16753,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11);
+/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
 const frontMatter={id:'itemGroups_yml',title:'itemGroups.yml'};const metadata={"id":"itemGroups_yml","title":"itemGroups.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/itemGroups_yml.md","permalink":"/MythicDrops/docs/itemGroups_yml","sidebar":"docs","previous":{"title":"identifying.yml","permalink":"/MythicDrops/docs/identifying_yml"},"next":{"title":"language.yml","permalink":"/MythicDrops/docs/language_yml"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of the
 itemGroups.yml with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"6.0.0",values:[{label:'6.0.0 (MD 6.1.x)',value:'6.0.0'},{label:'5.0.0 (MD 6.0.x)',value:'5.0.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"6.0.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`# You can create your own groups here.
 version: 6.0.0
@@ -16941,8 +17104,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11);
+/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
 const frontMatter={id:'permissions',title:'Permissions'};const metadata={"id":"permissions","title":"Permissions","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/permissions.md","permalink":"/MythicDrops/docs/permissions","sidebar":"docs","previous":{"title":"Commands","permalink":"/MythicDrops/docs/commands"},"next":{"title":"Weight","permalink":"/MythicDrops/docs/weight"}};/* @jsx mdx */const rightToc=[{value:'Permissions List',id:'permissions-list',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has many permissions in order to allow you to customize your server to your liking. Below is a
 comprehensive list of all of the permissions available within MythicDrops.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Permissions default to only being available to OPs unless otherwise marked with `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`default: 'true'`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Wildcard permissions (`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`.*`),`) have a list of children permission that they also grant. If a child permission is marked
 with false, that permission explicitly denied by the wildcard.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"permissions-list"},`Permissions List`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"6.1.x",values:[{label:'6.1.x (in development)',value:'6.1.x'},{label:'6.0.x',value:'6.0.x'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"6.1.x",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`mythicdrops.identify:
@@ -19532,7 +19695,7 @@ module.exports = Object.assign(
   __webpack_require__(264),
   __webpack_require__(266),
   __webpack_require__(272),
-  __webpack_require__(17),
+  __webpack_require__(18),
   __webpack_require__(276),
   __webpack_require__(278),
   __webpack_require__(280),
@@ -21952,7 +22115,7 @@ var Marker = __webpack_require__(13);
 var formatPosition = __webpack_require__(45);
 var split = __webpack_require__(73);
 
-var serializeRules = __webpack_require__(9).rules;
+var serializeRules = __webpack_require__(10).rules;
 
 var IgnoreProperty = 'ignore-property';
 
@@ -23136,8 +23299,8 @@ var tidyRules = __webpack_require__(71);
 
 var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 
-var serializeBody = __webpack_require__(9).body;
-var serializeRules = __webpack_require__(9).rules;
+var serializeBody = __webpack_require__(10).body;
+var serializeRules = __webpack_require__(10).rules;
 
 var Token = __webpack_require__(7);
 
@@ -23194,7 +23357,7 @@ var restoreWithComponents = __webpack_require__(76);
 var restoreFromOptimizing = __webpack_require__(38);
 var wrapSingle = __webpack_require__(33).single;
 
-var serializeBody = __webpack_require__(9).body;
+var serializeBody = __webpack_require__(10).body;
 var Token = __webpack_require__(7);
 
 function mergeIntoShorthands(properties, validator) {
@@ -24921,7 +25084,7 @@ var restoreFromOptimizing = __webpack_require__(38);
 var Token = __webpack_require__(7);
 var Marker = __webpack_require__(13);
 
-var serializeProperty = __webpack_require__(9).property;
+var serializeProperty = __webpack_require__(10).property;
 
 function wouldBreakCompatibility(property, validator) {
   for (var i = 0; i < property.components.length; i++) {
@@ -25504,7 +25667,7 @@ var canReorderSingle = __webpack_require__(49).canReorderSingle;
 var extractProperties = __webpack_require__(77);
 var rulesOverlap = __webpack_require__(97);
 
-var serializeRules = __webpack_require__(9).rules;
+var serializeRules = __webpack_require__(10).rules;
 var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 var Token = __webpack_require__(7);
 
@@ -25738,8 +25901,8 @@ var tidyRules = __webpack_require__(71);
 
 var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 
-var serializeBody = __webpack_require__(9).body;
-var serializeRules = __webpack_require__(9).rules;
+var serializeBody = __webpack_require__(10).body;
+var serializeRules = __webpack_require__(10).rules;
 
 var Token = __webpack_require__(7);
 
@@ -25822,7 +25985,7 @@ var extractProperties = __webpack_require__(77);
 
 var optimizeProperties = __webpack_require__(47);
 
-var serializeRules = __webpack_require__(9).rules;
+var serializeRules = __webpack_require__(10).rules;
 
 var Token = __webpack_require__(7);
 
@@ -25909,8 +26072,8 @@ var cloneArray = __webpack_require__(98);
 
 var Token = __webpack_require__(7);
 
-var serializeBody = __webpack_require__(9).body;
-var serializeRules = __webpack_require__(9).rules;
+var serializeBody = __webpack_require__(10).body;
+var serializeRules = __webpack_require__(10).rules;
 
 function reduceNonAdjacent(tokens, context) {
   var options = context.options;
@@ -26089,7 +26252,7 @@ module.exports = reduceNonAdjacent;
 
 var Token = __webpack_require__(7);
 
-var serializeAll = __webpack_require__(9).all;
+var serializeAll = __webpack_require__(10).all;
 
 var FONT_FACE_SCOPE = '@font-face';
 
@@ -26125,8 +26288,8 @@ module.exports = removeDuplicateFontAtRules;
 
 var Token = __webpack_require__(7);
 
-var serializeAll = __webpack_require__(9).all;
-var serializeRules = __webpack_require__(9).rules;
+var serializeAll = __webpack_require__(10).all;
+var serializeRules = __webpack_require__(10).rules;
 
 function removeDuplicateMediaQueries(tokens) {
   var candidates = {};
@@ -26161,8 +26324,8 @@ module.exports = removeDuplicateMediaQueries;
 
 var Token = __webpack_require__(7);
 
-var serializeBody = __webpack_require__(9).body;
-var serializeRules = __webpack_require__(9).rules;
+var serializeBody = __webpack_require__(10).body;
+var serializeRules = __webpack_require__(10).rules;
 
 function removeDuplicates(tokens) {
   var matched = {};
@@ -26472,8 +26635,8 @@ var Token = __webpack_require__(7);
 
 var cloneArray = __webpack_require__(98);
 
-var serializeBody = __webpack_require__(9).body;
-var serializeRules = __webpack_require__(9).rules;
+var serializeBody = __webpack_require__(10).body;
+var serializeRules = __webpack_require__(10).rules;
 
 function naturalSorter(a, b) {
   return a > b ? 1 : -1;
@@ -34249,9 +34412,9 @@ module.exports = require("util");
 "use strict";
 
 
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 const path = __webpack_require__(5)
-const mkdirpSync = __webpack_require__(17).mkdirsSync
+const mkdirpSync = __webpack_require__(18).mkdirsSync
 const utimesSync = __webpack_require__(113).utimesMillisSync
 const stat = __webpack_require__(51)
 
@@ -34420,7 +34583,7 @@ module.exports = copySync
 "use strict";
 
 
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 const path = __webpack_require__(5)
 const invalidWin32Path = __webpack_require__(112).invalidWin32Path
 
@@ -34490,7 +34653,7 @@ module.exports = mkdirs
 "use strict";
 
 
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 const path = __webpack_require__(5)
 const invalidWin32Path = __webpack_require__(112).invalidWin32Path
 
@@ -34570,9 +34733,9 @@ module.exports = function (size) {
 "use strict";
 
 
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 const path = __webpack_require__(5)
-const mkdirp = __webpack_require__(17).mkdirs
+const mkdirp = __webpack_require__(18).mkdirs
 const pathExists = __webpack_require__(23).pathExists
 const utimes = __webpack_require__(113).utimesMillis
 const stat = __webpack_require__(51)
@@ -34789,10 +34952,10 @@ module.exports = copy
 "use strict";
 
 
-const u = __webpack_require__(14).fromCallback
-const fs = __webpack_require__(10)
+const u = __webpack_require__(15).fromCallback
+const fs = __webpack_require__(11)
 const path = __webpack_require__(5)
-const mkdir = __webpack_require__(17)
+const mkdir = __webpack_require__(18)
 const remove = __webpack_require__(52)
 
 const emptyDir = u(function emptyDir (dir, callback) {
@@ -34844,7 +35007,7 @@ module.exports = {
 "use strict";
 
 
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 const path = __webpack_require__(5)
 const assert = __webpack_require__(110)
 
@@ -35195,10 +35358,10 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(14).fromCallback
+const u = __webpack_require__(15).fromCallback
 const path = __webpack_require__(5)
-const fs = __webpack_require__(10)
-const mkdir = __webpack_require__(17)
+const fs = __webpack_require__(11)
+const mkdir = __webpack_require__(18)
 const pathExists = __webpack_require__(23).pathExists
 
 function createFile (file, callback) {
@@ -35251,10 +35414,10 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(14).fromCallback
+const u = __webpack_require__(15).fromCallback
 const path = __webpack_require__(5)
-const fs = __webpack_require__(10)
-const mkdir = __webpack_require__(17)
+const fs = __webpack_require__(11)
+const mkdir = __webpack_require__(18)
 const pathExists = __webpack_require__(23).pathExists
 
 function createLink (srcpath, dstpath, callback) {
@@ -35319,10 +35482,10 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(14).fromCallback
+const u = __webpack_require__(15).fromCallback
 const path = __webpack_require__(5)
-const fs = __webpack_require__(10)
-const _mkdirs = __webpack_require__(17)
+const fs = __webpack_require__(11)
+const _mkdirs = __webpack_require__(18)
 const mkdirs = _mkdirs.mkdirs
 const mkdirsSync = _mkdirs.mkdirsSync
 
@@ -35390,7 +35553,7 @@ module.exports = {
 
 
 const path = __webpack_require__(5)
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 const pathExists = __webpack_require__(23).pathExists
 
 /**
@@ -35495,7 +35658,7 @@ module.exports = {
 "use strict";
 
 
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 
 function symlinkType (srcpath, type, callback) {
   callback = (typeof type === 'function') ? type : callback
@@ -35533,7 +35696,7 @@ module.exports = {
 "use strict";
 
 
-const u = __webpack_require__(14).fromCallback
+const u = __webpack_require__(15).fromCallback
 const jsonFile = __webpack_require__(82)
 
 jsonFile.outputJson = u(__webpack_require__(274))
@@ -35555,7 +35718,7 @@ module.exports = jsonFile
 
 var _fs
 try {
-  _fs = __webpack_require__(10)
+  _fs = __webpack_require__(11)
 } catch (_) {
   _fs = __webpack_require__(27)
 }
@@ -35697,7 +35860,7 @@ module.exports = jsonfile
 
 
 const path = __webpack_require__(5)
-const mkdir = __webpack_require__(17)
+const mkdir = __webpack_require__(18)
 const pathExists = __webpack_require__(23).pathExists
 const jsonFile = __webpack_require__(82)
 
@@ -35730,9 +35893,9 @@ module.exports = outputJson
 "use strict";
 
 
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 const path = __webpack_require__(5)
-const mkdir = __webpack_require__(17)
+const mkdir = __webpack_require__(18)
 const jsonFile = __webpack_require__(82)
 
 function outputJsonSync (file, data, options) {
@@ -35767,11 +35930,11 @@ module.exports = {
 "use strict";
 
 
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 const path = __webpack_require__(5)
 const copySync = __webpack_require__(111).copySync
 const removeSync = __webpack_require__(52).removeSync
-const mkdirpSync = __webpack_require__(17).mkdirpSync
+const mkdirpSync = __webpack_require__(18).mkdirpSync
 const stat = __webpack_require__(51)
 
 function moveSync (src, dest, opts) {
@@ -35821,7 +35984,7 @@ module.exports = moveSync
 "use strict";
 
 
-const u = __webpack_require__(14).fromCallback
+const u = __webpack_require__(15).fromCallback
 module.exports = {
   move: u(__webpack_require__(279))
 }
@@ -35834,11 +35997,11 @@ module.exports = {
 "use strict";
 
 
-const fs = __webpack_require__(10)
+const fs = __webpack_require__(11)
 const path = __webpack_require__(5)
 const copy = __webpack_require__(114).copy
 const remove = __webpack_require__(52).remove
-const mkdirp = __webpack_require__(17).mkdirp
+const mkdirp = __webpack_require__(18).mkdirp
 const pathExists = __webpack_require__(23).pathExists
 const stat = __webpack_require__(51)
 
@@ -35906,10 +36069,10 @@ module.exports = move
 "use strict";
 
 
-const u = __webpack_require__(14).fromCallback
-const fs = __webpack_require__(10)
+const u = __webpack_require__(15).fromCallback
+const fs = __webpack_require__(11)
 const path = __webpack_require__(5)
-const mkdir = __webpack_require__(17)
+const mkdir = __webpack_require__(18)
 const pathExists = __webpack_require__(23).pathExists
 
 function outputFile (file, data, encoding, callback) {
@@ -36669,7 +36832,7 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js + 1 modules
-var react_router = __webpack_require__(15);
+var react_router = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/server.js
 var server = __webpack_require__(140);
