@@ -431,6 +431,20 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 /* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */function TabItem(props){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",null,props.children);}/* harmony default export */ __webpack_exports__["a"] = (TabItem);
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports) {
 
 var Token = {
@@ -451,20 +465,6 @@ var Token = {
 
 module.exports = Token;
 
-
-/***/ }),
-/* 8 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function TabItem(props){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",null,props.children);}/* harmony default export */ __webpack_exports__["a"] = (TabItem);
 
 /***/ }),
 /* 9 */
@@ -4624,7 +4624,7 @@ module.exports = override;
 var Hack = __webpack_require__(72);
 
 var Marker = __webpack_require__(14);
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 var Match = {
   ASTERISK: '*',
@@ -9810,7 +9810,7 @@ module.exports = optimizeProperties;
 
 var wrapSingle = __webpack_require__(33).single;
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 function deep(property) {
   var cloned = shallow(property);
@@ -12205,7 +12205,7 @@ var Breaks = __webpack_require__(44).Breaks;
 var Spaces = __webpack_require__(44).Spaces;
 
 var Marker = __webpack_require__(14);
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 function supportsAfterClosingBrace(token) {
   return token[1][1] == 'background' || token[1][1] == 'transform' || token[1][1] == 'src';
@@ -12523,7 +12523,7 @@ module.exports = restoreWithComponents;
 // IMPORTANT: Mind Token class and this code is not related!
 // Properties will be tokenized in one step, see #429
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 var serializeRules = __webpack_require__(10).rules;
 var serializeValue = __webpack_require__(10).value;
 
@@ -14900,9 +14900,84 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
 const frontMatter={id:'customItems_yml',title:'customItems.yml'};const metadata={"id":"customItems_yml","title":"customItems.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/customItems_yml.md","permalink":"/MythicDrops/docs/customItems_yml","sidebar":"docs","previous":{"title":"creatureSpawning.yml","permalink":"/MythicDrops/docs/creatureSpawning_yml"},"next":{"title":"identifying.yml","permalink":"/MythicDrops/docs/identifying_yml"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of the
-customItems.yml with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"5.1.0",values:[{label:'5.1.0 (MD 6.1.x)',value:'5.1.0'},{label:'5.0.0 (MD 6.0.x)',value:'5.0.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"5.1.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 5.1.0
+customItems.yml with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"5.1.0",values:[{label:'5.2.0 (MD 6.2.x)',value:'5.2.0'},{label:'5.1.0 (MD 6.1.x)',value:'5.1.0'},{label:'5.0.0 (MD 6.0.x)',value:'5.0.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"5.2.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 5.2.0
+## Name of a custom item. Used as an identifier by the plugin, so it needs
+## to be unique.
+socketsword:
+  ## Material of the custom item. You can obtain a list of potential material
+  ## names (for 1.14 at time of writing) here:
+  ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+  material: WOODEN_SWORD
+  ## Name to display on the custom item itself.
+  display-name: "&2Socket Sword (Unique)"
+  ## Goes in the description of the custom item.
+  lore:
+    - "&7This sword has sockets!"
+    - "&2(Socket)"
+    - "&2(Socket)"
+    - "&2(Socket)"
+    - "&7Find a &2Socket Gem&7 to fill a &2(Socket)"
+  ## Weight of the custom item. See the weights section of the documentation
+  ## for more information.
+  weight: 100
+  ## Durability of the item when spawned. A durability of 1 means that the
+  ## item has taken 1 damage. If an item has a max durability of 127,
+  ## then setting this to 126 would almost break the item. This is due
+  ## to how both Minecraft and Spigot handle durability.
+  durability: 1
+  ## Chance for this custom item to drop when a monster that is carrying it
+  ## dies.
+  chance-to-drop-on-monster-death: 1.0
+  ## Should a message be sent to every player in the same world
+  ## when this custom item is dropped?
+  broadcast-on-find: true
+  ## Custom model data value. Only supported in 1.14+.
+  ## https://www.planetminecraft.com/forums/communities/texturing/new-1-14-custom-item-models-tuto-578834/
+  custom-model-data: 0
+  ## Should the custom item have the unbreakable NBT tag?
+  unbreakable: false
+  ## Should the custom item glow even if it doesn't have any enchantments?
+  glow: false
+  ## Enchantments to go on the custom item. Enchantment names here:
+  ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html
+  enchantments:
+    ## Standard enchantment name to level mapping.
+    DAMAGE_ALL: 5
+    LOOTING:
+      ## Minimum level of enchantment
+      minimum-level: 1
+      ## Maximum level of enchantment. Can be higher than normal maximum level
+      ## per Minecraft rules.
+      maximum-level: 2
+  ## Attributes to go on the items.
+  attributes:
+    ## This needs to be a unique value per custom item. It's used to help identify
+    ## the attribute to Minecraft.
+    iamarandomuniquekey1:
+      ## Attribute for this particular modifier. Attribute names here:
+      ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/Attribute.html
+      attribute: GENERIC_ARMOR
+      ## Decimal value for the amount this attribute adds.
+      amount: 2.0
+      ## Operation for this particular modifier. Operation names and descriptions here:
+      ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/AttributeModifier.Operation.html
+      operation: ADD_NUMBER
+    ## This attribute modifier uses a minimum amount and maximum amount to
+    ## create a randomized amount to apply for the modifier.
+    iamarandomuniquekey2:
+      attribute: GENERIC_ARMOR
+      ## Decimal value for the minimum amount this attribute adds.
+      minimum-amount: 4.0
+      ## Decimal value for the maximum amount this attribute adds.
+      maximum-amount: 6.0
+      operation: ADD_NUMBER
+      ## Which equipment slot should this modifier apply to? Not including
+      ## this field makes it apply to every equipment slot. Slot names here:
+      ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/EquipmentSlot.html
+      slot: OFF_HAND
+`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"5.1.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 5.1.0
 ## Name of a custom item. Used as an identifier by the plugin, so it needs
 ## to be unique.
 socketsword:
@@ -15085,7 +15160,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
 const frontMatter={id:'config_yml',title:'config.yml'};const metadata={"id":"config_yml","title":"config.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/config_yml.md","permalink":"/MythicDrops/docs/config_yml","sidebar":"docs","previous":{"title":"WorldGuard Support","permalink":"/MythicDrops/docs/worldguard-support"},"next":{"title":"creatureSpawning.yml","permalink":"/MythicDrops/docs/creatureSpawning_yml"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of the
 config.yml with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"7.3.0",values:[{label:'7.3.0 (MD 6.1.x)',value:'7.3.0'},{label:'7.1.0 (MD 6.0.x)',value:'7.1.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"7.3.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 7.3.0
 options:
@@ -15414,7 +15489,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
 const frontMatter={id:'tier_yml',title:'tier.yml'};const metadata={"id":"tier_yml","title":"tier.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/tier_yml.md","permalink":"/MythicDrops/docs/tier_yml","sidebar":"docs","previous":{"title":"socketing.yml","permalink":"/MythicDrops/docs/socketing_yml"},"next":{"title":"Aura Gems","permalink":"/MythicDrops/docs/aura_gems"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of a
 tier YAML with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Display color and identifier color combinations must be unique.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"1.1.0",values:[{label:'1.1.0 (MD 6.1.x)',value:'1.1.0'},{label:'1.0.1 (MD 6.0.x)',value:'1.0.1'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"1.1.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 1.1.0
 ## Display name for the tier. Used for display on items in lore.
@@ -15717,7 +15792,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
 /* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9);
 const frontMatter={id:'socketing_yml',title:'socketing.yml'};const metadata={"id":"socketing_yml","title":"socketing.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/socketing_yml.md","permalink":"/MythicDrops/docs/socketing_yml","sidebar":"docs","previous":{"title":"socketGems.yml","permalink":"/MythicDrops/docs/socketGems_yml"},"next":{"title":"tier.yml","permalink":"/MythicDrops/docs/tier_yml"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of the
 socketing.yml with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"5.3.0",values:[{label:'5.3.0 (MD 6.1.x)',value:'5.3.0'},{label:'5.1.0 (MD 6.0.x)',value:'5.1.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"5.3.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 5.3.0
@@ -15966,7 +16041,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
 const frontMatter={id:'language_yml',title:'language.yml'};const metadata={"id":"language_yml","title":"language.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/language_yml.md","permalink":"/MythicDrops/docs/language_yml","sidebar":"docs","previous":{"title":"itemGroups.yml","permalink":"/MythicDrops/docs/itemGroups_yml"},"next":{"title":"relation.yml","permalink":"/MythicDrops/docs/relation_yml"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of the
 language.yml. Most of the options are just used for various command outputs
 and the names of the keys are fairly self explanatory.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`There are a couple of explanations below, but most options are self-explanatory.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"3.5.0",values:[{label:'3.6.0 (MD 6.1.x)',value:'3.5.0'},{label:'3.2.0 (MD 6.0.x)',value:'3.2.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"3.5.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 3.6.0
@@ -16604,7 +16679,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9);
 /* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(12);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
 const frontMatter={id:'socketGems_yml',title:'socketGems.yml'};const metadata={"id":"socketGems_yml","title":"socketGems.yml","description":"import useBaseUrl from \"@docusaurus/useBaseUrl\";","source":"@site/../docs/socketGems_yml.mdx","permalink":"/MythicDrops/docs/socketGems_yml","sidebar":"docs","previous":{"title":"repairing.yml","permalink":"/MythicDrops/docs/repairing_yml"},"next":{"title":"socketing.yml","permalink":"/MythicDrops/docs/socketing_yml"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[{value:'New in 6.0.2',id:'new-in-602',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the shortened contents of the
 socketGems.yml with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{defaultValue:"5.2.0",values:[{label:'5.2.0 (MD 6.1.x)',value:'5.2.0'},{label:'5.1.0 (MD 6.0.x)',value:'5.1.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"],{value:"5.2.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`version: 5.2.0
 socket-gems:
@@ -16905,7 +16980,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
 const frontMatter={id:'itemGroups_yml',title:'itemGroups.yml'};const metadata={"id":"itemGroups_yml","title":"itemGroups.yml","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/itemGroups_yml.md","permalink":"/MythicDrops/docs/itemGroups_yml","sidebar":"docs","previous":{"title":"identifying.yml","permalink":"/MythicDrops/docs/identifying_yml"},"next":{"title":"language.yml","permalink":"/MythicDrops/docs/language_yml"}};/* @jsx mdx */const rightToc=[{value:'Configuration',id:'configuration',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"configuration"},`Configuration`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has a lot of configuration options. Below is the contents of the
 itemGroups.yml with inline explanations of what each configuration option does.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"6.0.0",values:[{label:'6.0.0 (MD 6.1.x)',value:'6.0.0'},{label:'5.0.0 (MD 6.0.x)',value:'5.0.0'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"6.0.0",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`# You can create your own groups here.
 version: 6.0.0
@@ -17256,7 +17331,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8);
+/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
 const frontMatter={id:'permissions',title:'Permissions'};const metadata={"id":"permissions","title":"Permissions","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/permissions.md","permalink":"/MythicDrops/docs/permissions","sidebar":"docs","previous":{"title":"Commands","permalink":"/MythicDrops/docs/commands"},"next":{"title":"Weight","permalink":"/MythicDrops/docs/weight"}};/* @jsx mdx */const rightToc=[{value:'Permissions List',id:'permissions-list',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has many permissions in order to allow you to customize your server to your liking. Below is a
 comprehensive list of all of the permissions available within MythicDrops.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Permissions default to only being available to OPs unless otherwise marked with `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`default: 'true'`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Wildcard permissions (`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`.*`),`) have a list of children permission that they also grant. If a child permission is marked
 with false, that permission explicitly denied by the wildcard.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"permissions-list"},`Permissions List`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"6.1.x",values:[{label:'6.1.x',value:'6.1.x'},{label:'6.0.x',value:'6.0.x'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"6.1.x",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`mythicdrops.identify:
@@ -22260,7 +22335,7 @@ var wrapForOptimizing = __webpack_require__(33).all;
 
 var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 var Marker = __webpack_require__(14);
 
 var formatPosition = __webpack_require__(45);
@@ -23316,7 +23391,7 @@ var optimizeProperties = __webpack_require__(47);
 
 var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 function removeEmpty(tokens) {
   for (var i = 0, l = tokens.length; i < l; i++) {
@@ -23453,7 +23528,7 @@ var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 var serializeBody = __webpack_require__(10).body;
 var serializeRules = __webpack_require__(10).rules;
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 function mergeAdjacent(tokens, context) {
   var lastToken = [null, [], []];
@@ -23509,7 +23584,7 @@ var restoreFromOptimizing = __webpack_require__(38);
 var wrapSingle = __webpack_require__(33).single;
 
 var serializeBody = __webpack_require__(10).body;
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 function mergeIntoShorthands(properties, validator) {
   var candidates = {};
@@ -23952,7 +24027,7 @@ var InvalidPropertyError = __webpack_require__(95);
 
 var wrapSingle = __webpack_require__(33).single;
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 var Marker = __webpack_require__(14);
 
 var formatPosition = __webpack_require__(45);
@@ -24910,7 +24985,7 @@ module.exports = understandable;
 
 var shallowClone = __webpack_require__(48).shallow;
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 var Marker = __webpack_require__(14);
 
 function isInheritOnly(values) {
@@ -25232,7 +25307,7 @@ var shallowClone = __webpack_require__(48).shallow;
 
 var restoreFromOptimizing = __webpack_require__(38);
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 var Marker = __webpack_require__(14);
 
 var serializeProperty = __webpack_require__(10).property;
@@ -25820,7 +25895,7 @@ var rulesOverlap = __webpack_require__(97);
 
 var serializeRules = __webpack_require__(10).rules;
 var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 function mergeMediaQueries(tokens, context) {
   var mergeSemantically = context.options.level[OptimizationLevel.Two].mergeSemantically;
@@ -26055,7 +26130,7 @@ var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 var serializeBody = __webpack_require__(10).body;
 var serializeRules = __webpack_require__(10).rules;
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 function unsafeSelector(value) {
   return /\.|\*| :/.test(value);
@@ -26138,7 +26213,7 @@ var optimizeProperties = __webpack_require__(47);
 
 var serializeRules = __webpack_require__(10).rules;
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 function mergeNonAdjacentBySelector(tokens, context) {
   var specificityCache = context.cache.specificity;
@@ -26221,7 +26296,7 @@ var optimizeProperties = __webpack_require__(47);
 
 var cloneArray = __webpack_require__(98);
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 var serializeBody = __webpack_require__(10).body;
 var serializeRules = __webpack_require__(10).rules;
@@ -26401,7 +26476,7 @@ module.exports = reduceNonAdjacent;
 /* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 var serializeAll = __webpack_require__(10).all;
 
@@ -26437,7 +26512,7 @@ module.exports = removeDuplicateFontAtRules;
 /* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 var serializeAll = __webpack_require__(10).all;
 var serializeRules = __webpack_require__(10).rules;
@@ -26473,7 +26548,7 @@ module.exports = removeDuplicateMediaQueries;
 /* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 var serializeBody = __webpack_require__(10).body;
 var serializeRules = __webpack_require__(10).rules;
@@ -26527,7 +26602,7 @@ var populateComponents = __webpack_require__(75);
 var wrapForOptimizing = __webpack_require__(33).single;
 var restoreFromOptimizing = __webpack_require__(38);
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 var animationNameRegex = /^(\-moz\-|\-o\-|\-webkit\-)?animation-name$/;
 var animationRegex = /^(\-moz\-|\-o\-|\-webkit\-)?animation$/;
@@ -26782,7 +26857,7 @@ var extractProperties = __webpack_require__(77);
 var isMergeable = __webpack_require__(46);
 var tidyRuleDuplicates = __webpack_require__(203);
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 var cloneArray = __webpack_require__(98);
 
@@ -30183,7 +30258,7 @@ var rebaseRemoteMap = __webpack_require__(103);
 var restoreImport = __webpack_require__(105);
 
 var tokenize = __webpack_require__(232);
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 var Marker = __webpack_require__(14);
 var hasProtocol = __webpack_require__(50);
 var isImport = __webpack_require__(106);
@@ -30524,7 +30599,7 @@ var matchDataUri = __webpack_require__(226);
 var rebaseLocalMap = __webpack_require__(102);
 var rebaseRemoteMap = __webpack_require__(103);
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 var hasProtocol = __webpack_require__(50);
 var isDataUriResource = __webpack_require__(227);
 var isRemoteResource = __webpack_require__(40);
@@ -30943,7 +31018,7 @@ var extractImportUrlAndMedia = __webpack_require__(104);
 var restoreImport = __webpack_require__(105);
 var rewriteUrl = __webpack_require__(231);
 
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 var isImport = __webpack_require__(106);
 
 var SOURCE_MAP_COMMENT_PATTERN = /^\/\*# sourceMappingURL=(\S+) \*\/$/;
@@ -31171,7 +31246,7 @@ module.exports = rewriteUrl;
 /***/ (function(module, exports, __webpack_require__) {
 
 var Marker = __webpack_require__(14);
-var Token = __webpack_require__(7);
+var Token = __webpack_require__(8);
 
 var formatPosition = __webpack_require__(45);
 
