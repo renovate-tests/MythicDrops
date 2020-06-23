@@ -15214,7 +15214,8 @@ options:
   use-tier-color-for-socket-name: true
   ## If mobs need to be killed by a player in order for their items to
   ## drop. This is true by default as it helps nullify mob traps. If
-  ## you want mob traps to work, set this to false.
+  ## you want mob traps to work, set this to false. This only works with
+  ## display-mob-equipment set to false.
   require-player-kill-for-drops: true
   ## Set this to true if you do not want to be able to roll multiple
   ## bonus enchantments with the same enchantment. This will lead to
@@ -15607,6 +15608,8 @@ maximum-sockets: 6
 weight: 0.01
 ## This is the percentage chance for a mob to drop this item if they're holding it
 ## when they die. 1.0 = 100%, 0.0 = 0%
+## Note that the above percentages only work for when a player has recently damaged the mob
+## before it dies (~1 second). If you want it to work for fall damage, bump it to 1.1.
 chance-to-drop-on-monster-death: 1.0
 ## This is the weight of this tier when identifying an item. See the weight page for more details.
 identity-weight: 0.01
