@@ -17476,7 +17476,158 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
 const frontMatter={id:'permissions',title:'Permissions'};const metadata={"id":"permissions","title":"Permissions","description":"import Tabs from '@theme/Tabs';","source":"@site/../docs/permissions.md","permalink":"/MythicDrops/docs/permissions","sidebar":"docs","previous":{"title":"Commands","permalink":"/MythicDrops/docs/commands"},"next":{"title":"Weight","permalink":"/MythicDrops/docs/weight"}};/* @jsx mdx */const rightToc=[{value:'Permissions List',id:'permissions-list',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`MythicDrops has many permissions in order to allow you to customize your server to your liking. Below is a
 comprehensive list of all of the permissions available within MythicDrops.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Permissions default to only being available to OPs unless otherwise marked with `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`default: 'true'`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Wildcard permissions (`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`.*`),`) have a list of children permission that they also grant. If a child permission is marked
-with false, that permission explicitly denied by the wildcard.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"permissions-list"},`Permissions List`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"6.1.x",values:[{label:'6.1.x',value:'6.1.x'},{label:'6.0.x',value:'6.0.x'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"6.1.x",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`mythicdrops.identify:
+with false, that permission explicitly denied by the wildcard.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"permissions-list"},`Permissions List`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_Tabs__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{defaultValue:"6.2.x",values:[{label:'6.2.x',value:'6.2.x'},{label:'6.1.x',value:'6.1.x'},{label:'6.0.x',value:'6.0.x'}],mdxType:"Tabs"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"6.2.x",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`mythicdrops.identify:
+  description: Allows a player to identify items.
+  default: "true"
+mythicdrops.socket:
+  description: Allows a player to use socket gems.
+  default: "true"
+mythicdrops.repair:
+  description: Allows a player to repair items.
+  default: "true"
+mythicdrops.command.combiners.list:
+  description: Allows player to use "/mythicdrops combiners list" command.
+mythicdrops.command.combiners.add:
+  description: Allows player to use "/mythicdrops combiners add" command.
+mythicdrops.command.combiners.remove:
+  description: Allows player to use "/mythicdrops combiners remove" command.
+mythicdrops.command.combiners.open:
+  description: Allows player to use "/mythicdrops combiners open" command.
+mythicdrops.command.combiners.*:
+  description: Allows player to use all "/mythicdrops combiners" commands.
+  children:
+    mythicdrops.command.combiners.list: true
+    mythicdrops.command.combiners.add: true
+    mythicdrops.command.combiners.remove: true
+mythicdrops.command.customcreate:
+  description: Allows player to use "/mythicdrops customcreate" command.
+mythicdrops.command.customitems:
+  description: Allows player to use "/mythicdrops customitems" command.
+mythicdrops.command.debug:
+  description: Allows player to use "/mythicdrops debug" command.
+mythicdrops.command.errors:
+  description: Allows player to use "/mythicdrops errors" command.
+mythicdrops.command.toggledebug:
+  description: Allows player to use "/mythicdrops toggledebug" command.
+mythicdrops.command.drop.custom:
+  description: Allows player to use "/mythicdrops drop custom" command.
+mythicdrops.command.drop.gem:
+  description: Allows player to use "/mythicdrops drop gem" command.
+mythicdrops.command.drop.tier:
+  description: Allows player to use "/mythicdrops drop tier" command.
+mythicdrops.command.drop.tome:
+  description: Allows player to use "/mythicdrops drop tome" command.
+mythicdrops.command.drop.unidentified:
+  description: Allows player to use "/mythicdrops drop unidentified" command.
+mythicdrops.command.drop.*:
+  description: Allows player to use all "/mythicdrops drop" commands.
+  children:
+    mythicdrops.command.drop.custom: true
+    mythicdrops.command.drop.gem: true
+    mythicdrops.command.drop.tier: true
+    mythicdrops.command.drop.tome: true
+    mythicdrops.command.drop.unidentified: true
+mythicdrops.command.give.custom:
+  description: Allows player to use "/mythicdrops give custom" command.
+mythicdrops.command.give.gem:
+  description: Allows player to use "/mythicdrops give gem" command.
+mythicdrops.command.give.tier:
+  description: Allows player to use "/mythicdrops give tier" command.
+mythicdrops.command.give.tome:
+  description: Allows player to use "/mythicdrops give tome" command.
+mythicdrops.command.give.unidentified:
+  description: Allows player to use "/mythicdrops give unidentified" command.
+mythicdrops.command.give.*:
+  description: Allows player to use all "/mythicdrops give" commands.
+  children:
+    mythicdrops.command.give.custom: true
+    mythicdrops.command.give.gem: true
+    mythicdrops.command.give.tier: true
+    mythicdrops.command.give.tome: true
+    mythicdrops.command.give.unidentified: true
+mythicdrops.command.itemgroups:
+  description: Allows player to use "/mythicdrops itemgroups" command.
+mythicdrops.command.modify.name:
+  description: Allows player to use "/mythicdrops modify name" command.
+mythicdrops.command.modify.lore.add:
+  description: Allows player to use "/mythicdrops modify lore add" command.
+mythicdrops.command.modify.lore.remove:
+  description: Allows player to use "/mythicdrops modify lore remove" command.
+mythicdrops.command.modify.lore.insert:
+  description: Allows player to use "/mythicdrops modify lore insert" command.
+mythicdrops.command.modify.lore.set:
+  description: Allows player to use "/mythicdrops modify lore set" command.
+mythicdrops.command.modify.lore.*:
+  description: Allows player to use "/mythicdrops modify lore" commands.
+  children:
+    mythicdrops.command.modify.lore.add: true
+    mythicdrops.command.modify.lore.remove: true
+    mythicdrops.command.modify.lore.insert: true
+    mythicdrops.command.modify.lore.set: true
+mythicdrops.command.modify.enchantment.add:
+  description: Allows player to use "/mythicdrops modify enchantment add" command.
+mythicdrops.command.modify.enchantment.remove:
+  description: Allows player to use "/mythicdrops modify enchantment remove" command.
+mythicdrops.command.modify.enchantment.*:
+  description: Allows player to use "/mythicdrops modify enchantment" commands.
+  children:
+    mythicdrops.command.modify.enchantment.add: true
+    mythicdrops.command.modify.enchantment.remove: true
+mythicdrops.command.modify.*:
+  description: Allows player to use "/mythicdrops modify" commands.
+  children:
+    mythicdrops.command.modify.name: true
+    mythicdrops.command.modify.lore.*: true
+    mythicdrops.command.modify.enchantment.*: true
+mythicdrops.command.load:
+  description: Allows player to reload configuration files.
+mythicdrops.command.socketgems:
+  description: Allows player to use "/mythicdrops socketgems" command.
+mythicdrops.command.spawn.custom:
+  description: Allows player to use "/mythicdrops spawn custom" command.
+mythicdrops.command.spawn.gem:
+  description: Allows player to use "/mythicdrops spawn gem" command.
+mythicdrops.command.spawn.tier:
+  description: Allows player to use "/mythicdrops spawn tier" command.
+mythicdrops.command.spawn.tome:
+  description: Allows player to use "/mythicdrops spawn tome" command.
+mythicdrops.command.spawn.unidentified:
+  description: Allows player to use "/mythicdrops spawn unidentified" command.
+mythicdrops.command.spawn.*:
+  description: Allows player to use all "/mythicdrops spawn" commands.
+  children:
+    mythicdrops.command.spawn.custom: true
+    mythicdrops.command.spawn.gem: true
+    mythicdrops.command.spawn.tier: true
+    mythicdrops.command.spawn.tome: true
+    mythicdrops.command.spawn.unidentified: true
+mythicdrops.command.tiers:
+  description: Allows player to use "/mythicdrops tiers" command.
+mythicdrops.command.*:
+  description: Allows player to use all commands.
+  children:
+    mythicdrops.command.combiners.*: true
+    mythicdrops.command.customcreate: true
+    mythicdrops.command.customitems: true
+    mythicdrops.command.debug: true
+    mythicdrops.command.errors: true
+    mythicdrops.command.toggledebug: true
+    mythicdrops.command.drop.*: true
+    mythicdrops.command.give.*: true
+    mythicdrops.command.itemgroups: true
+    mythicdrops.command.modify.*: true
+    mythicdrops.command.load: true
+    mythicdrops.command.socketgems: true
+    mythicdrops.command.spawn.*: true
+    mythicdrops.command.tiers.*: true
+mythicdrops.*:
+  description: Allows player to do all MythicDrops tasks.
+  children:
+    mythicdrops.identify: true
+    mythicdrops.socket: true
+    mythicdrops.repair: true
+    mythicdrops.command.*: true
+`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_theme_TabItem__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{value:"6.1.x",mdxType:"TabItem"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_MythicDrops_MythicDrops_website_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-yaml"}),`mythicdrops.identify:
   description: Allows a player to identify items.
    default: 'true'
 mythicdrops.socket:
